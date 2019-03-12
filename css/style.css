@@ -1,0 +1,62 @@
+
+/* Landing Page CSS */
+
+.landing{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+
+.startButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+  font-size: 200%
+  
+}
+
+.landImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Game Page CSS */
+
+.gamePage{
+    font-size: 60px;
+    text-align: center
+}
+
+table {
+    border-collapse: collapse;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+td {
+    border: 5px solid gray;
+    width: 150px;
+    height: 150px;
+}
+
+.reset{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+input {
+    width:100%;
+    height:80%;
+    font: size 0px;
+    border:px;
+    background-color: gainsboro;
+    color:#FFFFFF;
+    transition: duration 0.2s;
+}
