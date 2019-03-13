@@ -1,144 +1,32 @@
-<!doctype html>
+<!-- FIRST PAGE -->
 
+<!doctype html>
 <html>
   <head>
-    <title>Tic Tac Toe</title>
-    
+    <title>Tic Tac Toe</title>  
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <body>
 
-  <body onload="game();">
-      <!-- <main id="tictactoe"> -->
+    <h1 class="landing"> Tic Tac Toe Game </h1>
+    <div class="landImg">
+    </div>
 
-    <h1 class="gamePage">Tic Tac Toe </h1>
-    <div id="message"> </div>
-    <br>
+    <br><br>
+
+    <h2>Game Instructions:</h2>
     
-    <!-- Initialize the borders -->
+    <p>A Tic-Tac-Toe game can at the most have 9 moves.<br><br>
+    The logic for player moves is as follows:<br>
+    Each player goes by pressing on an empty space on the board to mark it<br> with an X or an O. The first person to get 3 X’s or O’s in a row, vertically,<br> horizontally or diagonally, wins. </p>
 
-    <table>
-
-      <tr>
-          <td class="box" id="b1" onclick="xo(this)"> </td>
-          <td class="box" id="b2" onclick="xo(this)"> </td>
-          <td class="box" id="b3" onclick="xo(this)"> </td>
-      </tr>
-      <tr>
-          <td class="box" id="b4" onclick="xo(this)"> </td>
-          <td class="box" id="b5" onclick="xo(this)"> </td>
-          <td class="box" id="b6" onclick="xo(this)"> </td>
-      </tr>
-      <tr>
-          <td class="box" id="b7" onclick="xo(this)"> </td>
-          <td class="box" id="b8" onclick="xo(this)"> </td>
-          <td class="box" id="b9" onclick="xo(this)"> </td>
-      </tr>
-
-  </table>
-
-
+    <br><br>
+    <br><br>
+    <br><br>
+    
+      <!-- linking two pages -->
+    <a class="startButton" href="landing.html" <button> Start The Game </button></a> 
+    
   
-  <br><br>
-
-<!-- Reset The Game -->
-
-  <footer>
-      <!-- <a class="reset" href="javascript: resetGame();"> Reset Game </a> -->
-          <button class="reset" onclick="location.reload();"> Reset Game </button>
-          
-  </footer>
-
-  <script src="main.js"> </script>
-  
-  <!-- <script>
-      var game = {
-        counter:1,
-      
-         function(e,obj){
-              var self = this;
-      
-              self.setPlay(e,obj);
-              self.validateGame();
-              
-          },
-          setPlay: function(e,obj){
-              var self = this,
-                  player1 = 'X', player2 = 'O',
-                  cell = obj || {};
-      
-              if ( $(obj).hasClass('player1') ||  $(obj).hasClass('player2') ) {
-                  e.preventDefault();
-                  return false;
-              }        
-              
-              if ( game.counter % 2 === 0) {
-                  $(cell).html(player1).addClass('player1 selected');
-              } else {
-                  $(cell).html(player2).addClass('player2 selected');
-              }
-      
-              if($('td').length - 2 == $('td.selected').length) {
-      
-                  if( $('.message').is(':hidden') ) {
-                      $('.message1').fadeIn('slow');
-                      return false;
-                  }
-                
-              }
-      
-              game.counter++;
-          },
-          validateGame: function(){
-              var index1 = $('td.box1'),
-                  index2 = $('td.box2'),
-                  index3 = $('td.box3'),
-                  index4 = $('td.box4'),
-                  index5 = $('td.box5'),
-                  index6 = $('td.box6'),
-                  index7 = $('td.box7'),
-                  index8 = $('td.box8'),
-                  index9 = $('td.box9');
-      
-
-  /* Horizental Win */
-
-  if ((((index1).text() == "X") || ((index1).text()  == "O")) && (((index1).text()  == (index2).text()) && ((index2).text()  == (index3).text() ))){
-        console.log(index1.text  + "Wins")
-    } 
-    else if ((((index4).text()  == "X") || ((index4).text() == "O")) && (((index4).text()  == (index5).text() ) && ((index5).text()  == (index6).text() ))){
-        console.log((index4).text()  + "Wins")
-    }
-    else if ((((index7).text()  == "X") || ((index7).text()  == "O")) && (((index7).text() == (index8).text()) && ((index8).text() == (index9).text()))){
-        console.log(index9.text() + "Wins")
-    }
-
-    /* Vertical Win */
-
-    else if ((((index1).text() == "X") || ((index1).text() == "O")) && (((index1).text() == (index4).text()) && ((index4).text() == (index7).text()))){
-        console.log(index1.text() + "Wins")
-    }
-    else if ((((index2).text() == "X") || ((index2).text() == "O")) && (((index2).text() == (index5).text()) && ((index5).text() == (index8).text()))){
-            console.log(index2.text() + "Wins")
-    }
-    else if ((((index3).text() == "X") || ((index3).text() == "O")) && (((index3).text() == (index6).text()) && ((index6).text() == (index9).text()))){
-        console.log((index3).text() + "Wins")
-    }
-
-    /* diagonally Win */
-
-    else if ((((index1).text() == "X") || ((index1).text() == "O")) && (((index1).text() == (index5).text()) && ((index5).text() == (index9).text()))){
-        console.log((index1).text() + "Wins")
-    }
-    else if ((((index3).text() == "X") || ((index3).text() == "O")) && (((index3).text() == (index5).text()) && ((index5).text() == (index7).text()))){
-            console.log((index3).text() + "Wins")
-    }
-}
-
-
-     
-
-      </script> -->
-
-
   </body>
   </html>
